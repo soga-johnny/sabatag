@@ -1,0 +1,147 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    animation: fadeScene 4s ease-in-out;
+}
+@keyframes fadeScene {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    z-index: 50;
+}
+.headerLogo {
+    height: 28px;
+    fill: #ffffff;
+    margin-right: -55px;
+    margin-left: -56px;
+}
+.headerLogoName {
+    height: 20px;
+    fill: #ffffff;
+    margin-left: -40px;
+}
+
+/* --------------------modal */
+
+.cardModal {
+    position: fixed;
+    top: 24px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hwb(0 0% 100% / 0.4);
+    z-index: -100;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+.cardModal.active {
+    z-index: 100;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.cardModalBox {
+    text-align: center;
+    margin: 32px 24px;
+    padding: 40px 24px 24px 24px;
+    border-radius: 32px;
+    background-color: white;
+    color: #156385;
+}
+.cardModalBox p {
+    font-size: 14px;
+}
+.cardModalBox h3 {
+    font-size: 16px;
+}
+.cardModalBox h2 {
+    font-size: 32px;
+    margin-bottom: -24px;
+}
+.number {
+    font-size: 10px;
+}
+.comment {
+    margin: 24px auto 16px auto;
+    width: 200px;
+    height: 24px;
+    background-color: #156385;
+    color: white;
+    border-radius: 50px;
+}
+.modalClose {
+    font-size: 32px;
+    margin-top: 64px;
+}
+
+/* --------------------model */
+.model {
+    width: 100%;
+    height: 150px;
+}
+model-viewer {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+/* --------------------Card */
+
+.card {
+    width: 1200px;
+    height: 320px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    padding: 40px 72px;
+    background-color: white;
+    border-radius: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+.cardMeta {
+    border-left: #156385 solid 4px;
+    padding-left: 64px;
+    margin: 40px 64px;
+
+}
+.cardMeta p {
+    font-size: 56px;
+    color: #156385;
+}
+.cardMeta h2 {
+    font-size: 100px;
+    color: #156385;
+    margin: -72px 0;
+}
+.cardIcon img {
+    width: 300px;
+    height: 300px;
+}
+

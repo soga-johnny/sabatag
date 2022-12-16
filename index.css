@@ -1,0 +1,35 @@
+.wrapper {
+    margin: 220px 40px ;
+    text-align: center;
+    animation: fade 0.5s ease-in-out;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+        margin-top: 260px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    text-align: center;
+
+}
+.mainLogo {
+    margin-bottom: 24px;
+}
+
+#btn {
+    background-color: #156385;
+    border-color: transparent;
+    width: 220px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 120px;
+}
